@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+}
+a{
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+ul > a,ul > img{
+    padding: 0 8px;
+}
+.header-img{
+    box-shadow: 0 0 10px 0 gainsboro;
+    border-radius: 20px;
+    cursor: pointer;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https: //fonts .gstatic .com/s/productsans/v 5px /Hyvgu2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOef.woff2)format('woff2');
+}
+h1{
+    font-family: product sans;
+    font-size: 5.5em;
+}
+.my-input-container{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius:  20px;
+}
+.my-input-container:hover{
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+.my-input-container > input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+img:hover{
+    cursor: pointer;
+}
+.my-button-container{
+    padding-top: 10px;
+}
+button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 20px;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10p 0 gainsboro;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+#footer-left{
+    display: flex;
+    justify-self: start;
+    padding-left: 20px;
+    align-items: center;
+}
+#footer-right{
+    display: flex;
+    justify-self: flex-end;
+    margin-right: 20px;
+    align-items: center;
+}
+@media(max-width:630px){
+    #footer-nav{
+        flex-direction: column;
+    }
+    #footer-left{
+        justify-content: center;
+    }
+    #footer-right{
+        justify-content: center;
+    }
+    .my-input-container{
+        width: 95vw;
+    }
+}
+@media(max-height:522px){
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        margin-bottom: 40px;
+    }
+    footer{
+        position: relative;
+    }
+}
+@media(max-height: 570px)and (max-width: 630px){
+    body{
+        overflow-x: hidden;
+    }
+    section{
+        margin-bottom: 13px;
+    }
+    footer{
+        position: relative;
+    }
+}
